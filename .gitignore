@@ -1,0 +1,24 @@
+# Ignored file extensions
+*.pyc
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.DS_Store
+# Ignore build related extension
+# and directory
+*.egg-info
+build
+
+dist
+bin
+venv
+
+# System/sublime ignored files
+trash
+sblm.sublime-workspace
+
+.idea
+.coverage

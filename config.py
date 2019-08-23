@@ -1,0 +1,41 @@
+"""
+Configuration class
+"""
+class Config():
+    # TODO
+    APP_NAME = 'Your app name'
+
+    # Enable debug mode
+    DEBUG = True
+    
+    # TODO
+    # Setup database URL and credentials
+    # Not sure kung kelangan nyo to pero just keep it here for now
+    APP_DB = {
+        'host': 'localhost',
+        'db': 'bottle_collector',
+        'user': 'bottle',
+        'password': 'user',
+        'port': 3306
+    }
+
+
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{}:{}@{}/{}?charset=utf8mb4'.format(
+        APP_DB['user'], APP_DB['password'], APP_DB['host'], APP_DB['db'])
+
+    # Setup CORS
+    ALLOWED_HEADERS = ['Origin', 'Accept', 'Content-Type', 'X-Requested-With', 'X-CSRF-Token']
+    ALLOWED_ORIGINS = '*'
+    ALLOWED_METHODS = ['GET', 'HEAD', 'POST', 'OPTIONS', 'PUT', 'PATCH', 'DELETE']
+
+    # TODO
+    # This is where frontend should go, create a route for all UI files
+    # Setup template folder for webpages
+    TEMPLATE_FOLDER = "templates"
+
+
+    # TODO
+    # Add nyo yung API key na makukuha nyo sa globe, pati ung app_id
+    GLOBE_API_KEY = ""
+    GLOBE_APP_ID = ""
