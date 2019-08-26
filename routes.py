@@ -5,6 +5,8 @@ from config import Config
 from flask import Blueprint
 from flask import request, make_response, render_template
 
+from models import db, User, Stats
+
 handler = Blueprint('router', __name__)
 
 @handler.route('/')
