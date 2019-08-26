@@ -3,13 +3,14 @@ Configuration class
 """
 class Config():
     # TODO
-    APP_NAME = 'Your app name'
+    APP_NAME = 'Ragasa'
 
     # Enable debug mode
     DEBUG = True
     
     # TODO
     # Setup database URL and credentials
+    # z o k e y
     # Not sure kung kelangan nyo to pero just keep it here for now
     APP_DB = {
         'host': 'localhost',
@@ -38,4 +39,4 @@ class Config():
     # TODO
     # Add nyo yung API key na makukuha nyo sa globe, pati ung app_id
     GLOBE_API_KEY = ""
-    GLOBE_APP_ID = ""
+    GLOBE_APP_ID = "pAoLsdr74jC7ocy9AjT7xyCd5AK8s9pq"
