@@ -6,6 +6,7 @@ DO NOT TOUCH/EDIT
 from flask import Flask
 from config import Config
 from routes import handler
+from models import db
 
 
 def create_app(config):
@@ -18,6 +19,9 @@ def create_app(config):
 
     # Loads the needed config in the configuration file
     app.config.from_object(Config)
+
+    # Initializes database, will use MySQL for now
+    db.init_app(app)
 
     # Handles CORS and other Cross Origin settings 
     # Uses the after request decorator

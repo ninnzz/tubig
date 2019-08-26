@@ -14,12 +14,11 @@ class Config():
     # Not sure kung kelangan nyo to pero just keep it here for now
     APP_DB = {
         'host': 'localhost',
-        'db': 'bottle_collector',
-        'user': 'bottle',
+        'db': 'tubig',
+        'user': 'root',
         'password': 'user',
         'port': 3306
     }
-
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{}:{}@{}/{}?charset=utf8mb4'.format(
